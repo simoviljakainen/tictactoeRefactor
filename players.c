@@ -15,7 +15,7 @@ int player_input() {
 }
 
 void avoid_reading_more_chars() {
-    while (getchar() != '\n');
+    while (getchar() != EOF);
 }
 
 int index_of_input(char input) {
