@@ -10,14 +10,14 @@
 void test_player_input(void){
 	freopen("testinput.txt", "r", stdin);
 	CU_ASSERT_EQUAL(player_input(), 8);
-	CU_ASSERT(getchar() == '\n');
+	CU_ASSERT(getchar() == EOF);
 	
 }
 
 void test_avoid_reading_more_chars(void){
 	freopen("testinput.txt", "r", stdin);
 	avoid_reading_more_chars();
-	CU_ASSERT_EQUAL(getchar(), '\n');
+	CU_ASSERT_EQUAL(getchar(), EOF);
 }
 
 void test_index_of_input(void){
